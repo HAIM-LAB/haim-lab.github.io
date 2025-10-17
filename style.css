@@ -419,11 +419,15 @@ footer small {
   list-style: none;
 }
 
+.card-text {
+  text-align: justify;
+}
+
 .project-card img {
   width: 40%;
   height: auto;
   border: 1px solid #e1e1e1;
-  border-radius: 10px;
+  border-radius: 25;
   margin: 0.5rem;
 }
 
@@ -431,8 +435,8 @@ footer small {
   background-color: #fff;
   border: 1px solid #e1e1e1;
   border-radius: 15px;
-  padding: 1.5rem;
-  margin: 1rem;
+  padding: 3rem;
+  margin: 1.2rem;
   width: calc(45% - 4rem);
   box-sizing: border-box;
   display: flex;
@@ -466,4 +470,93 @@ footer small {
   border: 1px solid #e1e1e1;
   border-radius: 10px;
   margin: 0.5rem;
+}
+
+/* Announcements Section */
+.announcements {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e1e1e1;
+}
+
+.announcements h2 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #222;
+}
+
+.announcements-intro {
+  display: none;
+}
+
+.announcement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.announcement-year-group {
+  margin-bottom: 3rem;
+}
+
+.announcement-year-heading {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #222;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 0.5rem;
+}
+
+.announcement-item {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  position: relative;
+  line-height: 1.8;
+}
+
+.announcement-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #990000;
+  font-weight: 700;
+}
+
+.announcement-date {
+  font-weight: 700;
+  color: #222;
+  margin-right: 0.5rem;
+  font-style: normal;
+}
+
+.announcement-content {
+  display: inline;
+}
+
+.announcement-content p {
+  display: inline;
+  margin: 0;
+}
+
+.announcement-link {
+  font-weight: 400;
+  margin-left: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .announcements h2 {
+    font-size: 3rem;
+  }
+
+  .announcement-year-heading {
+    font-size: 2.4rem;
+  }
+
+  .announcement-item {
+    padding-left: 1.5rem;
+  }
 }

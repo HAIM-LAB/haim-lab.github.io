@@ -32,6 +32,41 @@
       href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Simple, consistent card layout so text and images align */
+    .project-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      border: 1px solid #e8e8e8;
+      padding: 1rem;
+      border-radius: 6px;
+    }
+    .project-card strong {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .project-card .card-text {
+      margin: 0;
+      line-height: 1.45;
+    }
+    .project-card .card-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .project-card .card-images img {
+      flex: 1 1 260px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  </style>
 
     <!-- Favicon
   ------------------------------------ -->
@@ -143,6 +178,7 @@
                 <img src="./images/asd.png" alt="Placeholder image" />
                 <img src="./images/Picture1.jpg" alt="Placeholder image" />
               </div>
+              <p class="card-text">We are building a human‑centric, hybrid‑AI system to understand and predict behavioral patterns in 2–5 year‑old children with ASD, bridging communication between caregivers and children through personalized, evidence‑based insights. The system fuses multimodal data—day‑to‑day audio/video, environmental context, and physiological signals (e.g., electrodermal activity)—together with ABA therapist and clinical reports for longitudinal evaluation. Early experiments show facial expressions alone are ambiguous, so we prioritize truly multimodal sensing and are partnering with ABA centers in the New Orleans and greater Louisiana area to collect data using cameras (including depth), high‑quality microphones, air monitors, and wearable sensors.</p>
             </div>
       
             <div class="project-card">
@@ -151,6 +187,7 @@
                 <img src="./images/Picsart-AiImageEnhancer (1).png" alt="Placeholder image" />
                 <img src="./images/7-Picsart-AiImageEnhancer (2).jpg" alt="Placeholder image" />
               </div>
+              <p class="card-text">We evaluate small vision-language models (Gemma-3 and Qwen-VL) on qualitative mechanical problem solving — a key component of human commonsense reasoning. Using benchmark tasks from the Bennett Mechanical Comprehension Test, we analyze not only model accuracy but also the quality of their step-by-step reasoning. Results show that while both models can arrive at correct answers, their reasoning often contains flaws, hallucinations, or poor spatial understanding. This study highlights the need for hybrid, neuro-symbolic systems that integrate visual grounding with formal reasoning to achieve reliable, human-like problem solving.</p>
             </div>
             <div class="project-card">
               <strong>Children's Social-Emotional Learning</strong>
@@ -158,6 +195,7 @@
                 <img src="./images/flow-v4.png" alt="Placeholder image" />
                 <img src="./images/ExplorationMode_old.png" alt="Placeholder image" />
               </div>
+              <p class="card-text">Short description coming soon.</p>
             </div>
           
 
@@ -167,6 +205,7 @@
                <img src="https://www.marktechpost.com/wp-content/uploads/2025/08/a-detailed-digital-illustration-of-a-vin__seqYHhlTiOkicVA25bR-A_I-TgcWM-TK-7cNGWZLm6Gw-218x150.png" alt="Placeholder image" />
                <img src="https://www.marktechpost.com/wp-content/uploads/2025/08/a-detailed-digital-illustration-of-a-vin__seqYHhlTiOkicVA25bR-A_I-TgcWM-TK-7cNGWZLm6Gw-218x150.png" alt="Placeholder image" />
              </div>
+             <p class="card-text">Short description coming soon.</p>
            </div>
           </div>
 
@@ -200,4 +239,3 @@
   ------------------------------------ -->
   </body>
 </html>
-
