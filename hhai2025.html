@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
     />
-    <link rel="stylesheet" href="//amrl.cs.utexas.edu/assets/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Favicon
   ------------------------------------ -->
@@ -73,6 +73,11 @@
       nav a:hover {
         color: #ffcc00;
       }
+      /* Lab top nav overrides */
+      #lab-nav { background-color: #fff !important; padding: 0 !important; }
+      #lab-nav li { display: inline; text-transform: uppercase; font-size: 1.2rem; line-height: 4rem; }
+      #lab-nav a { color: #222 !important; display: inline-block; text-decoration: none; padding: 0 1.1rem; margin: 0; font-size: 1.2rem; border-bottom: none; transition: none; }
+      #lab-nav li a:hover, #lab-nav li.current a { color: #222 !important; border-bottom: 1px solid black; }
       /* Main Container */
       .container {
         width: 96%;
@@ -128,7 +133,7 @@
     </style>
   </head>
   <div class="row" style="background-color: #fff">
-    <nav class="twelve columns" style="background-color: #fff">
+    <nav id="lab-nav" class="twelve columns" style="background-color: #fff">
       <hr />
       <br />
       <h1 style="text-align: center">
@@ -137,32 +142,37 @@
       <hr />
       <ul style="text-align: center">
         <li>
-          <a href="https://haim-lab.github.io/"> Home </a>
+          <a href="./index.html"> Home </a>
         </li>
         <li>
-          <a href="https://haim-lab.github.io/members"> Members </a>
+          <a href="./members.html"> Members </a>
         </li>
         <li>
-          <a href="https://haim-lab.github.io/research"> Research </a>
+          <a href="./research.html"> Research </a>
         </li>
         <li>
-          <a href="https://haim-lab.github.io/publications">
+          <a href="./publications.html">
             Publications
           </a>
         </li>
         <li>
-          <a href="https://haim-lab.github.io/prospective">
+          <a href="./prospective.html">
             Prospective students
           </a>
         </li>
         <li class="current active">
-          <a href="https://haim-lab.github.io/hhai2025">
+          <a href="./hhai2025.html">
             HHAI Workshop 2025
           </a>
         </li>
         <li>
-              <a href="https://haim-lab.github.io/hhaikeml2026">
+              <a href="./hhaikeml2026.html">
                 HHAI Workshop 2026
+              </a>
+        </li>
+        <li>
+              <a href="./calendar.html">
+                Calendar
               </a>
         </li>
       </ul>
@@ -480,4 +490,4 @@
       </p>
     </footer>
   </body>
-<>
+

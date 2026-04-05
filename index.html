@@ -1,293 +1,164 @@
-<!DOCTYPE lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <!-- Basic Page Needs
-  ------------------------------------ -->
     <meta charset="utf-8" />
-    <title> HAIM Lab | Home </title>
-
-    <!-- Mobile Specific Metas
-  ------------------------------------ -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-
-    <!-- FONT
-  ------------------------------------ -->
-    <link
-      href="//fonts.googleapis.com/css?family=Lustria|Lato:400,700,400italic|Playfair+Display:700,400italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- CSS
-  ------------------------------------ -->
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
-    />
-    <link rel="stylesheet" href="//amrl.cs.utexas.edu/assets/style.css" />
-
-    <!-- Favicon
-  ------------------------------------ -->
+    <title>HAIM Lab | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="//fonts.googleapis.com/css?family=Lustria|Lato:400,700,400italic|Playfair+Display:700,400italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
-
-    <!-- Required for GetSimple Plugins
-  ------------------------------------ -->
     <meta name="keywords" content="courses, computer science, robotics" />
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-97CQQCDP41"
-  ></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-97CQQCDP41"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-97CQQCDP41');
   </script>
 
   <body id="index">
-    <!-- Primary Page Layout
-     Home, Members, Research, Publication, Prospective students
-  ------------------------------------ -->
     <div>
       <div class="row">
         <nav class="twelve columns">
-          <hr />
-          <br />
-          <h1 style="text-align: center">
-            Human, Hybrid AI, and Machines (HAIM) Lab
-          </h1>
+          <hr /><br />
+          <h1 style="text-align:center">Human, Hybrid AI, and Machines (HAIM) Lab</h1>
           <hr />
           <ul>
-            <li>
-              <a href="/style.css"> </a>
-            </li>
-
-            <li class="current active">
-              <a href="https://haim-lab.github.io/"> Home </a>
-            </li>
-
-            <li>
-              <a href="https://haim-lab.github.io/members">
-                Members
-              </a>
-            </li>
-
-            <li>
-              <a href="https://haim-lab.github.io/research">
-                Research
-              </a>
-            </li>
-
-            <li>
-              <a href="https://haim-lab.github.io/publications">
-                Publications
-              </a>
-            </li>
-
-            <li>
-              <a href="https://haim-lab.github.io/prospective">
-                Prospective students
-              </a>
-            </li>
-            <li>
-              <a href="https://haim-lab.github.io/hhai2025">
-                HHAI Workshop 2025
-              </a>
-            </li>
-            <li>
-              <a href="https://haim-lab.github.io/hhaikeml2026">
-                HHAI Workshop 2026
-              </a>
-            </li>
+            <li class="current active"><a href="./index.html">Home</a></li>
+            <li><a href="./members.html">Members</a></li>
+            <li><a href="./research.html">Research</a></li>
+            <li><a href="./publications.html">Publications</a></li>
+            <li><a href="./prospective.html">Prospective Students</a></li>
+            <li><a href="./hhai2025.html">HHAI Workshop 2025</a></li>
+            <li><a href="./hhaikeml2026.html">HHAI Workshop 2026</a></li>
+            <li><a href="./calendar.html">Calendar</a></li>
           </ul>
           <hr />
         </nav>
       </div>
-      <div style="padding: 0 15rem; margin: 0 4rem">
+
+      <div style="padding: 0 10rem; margin: 0 4rem">
         <section class="twelve columns">
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-          />
 
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-          />
-
-          <style>
-            button.slick-prev.slick-arrow::before {
-              color: black;
-            }
-
-            button.slick-next.slick-arrow::before {
-              color: black;
-            }
-          </style>
-
-          <!-- <div class="main_carousel">
+          <!-- Hero: intro + photo -->
+          <div class="hero-intro">
             <div>
-              <img
-                class="center-image"
-                src="./assets/images/robots/AHG_Ribbon_Cutting.jpg"
-              />
+              <p>
+                For the mutual progress of humanity and science, we must be able to
+                use AI, not as mere tools but as our able teammates. In the Human,
+                Hybrid AI, and Machines (HAIM, rhymes with "time") laboratory, directed
+                by <a target="_blank" href="https://cs.uno.edu/~shreya/">Dr. Shreya Banerjee</a>,
+                our overarching research goal is to make progress in this direction,
+                using hybrid artificial intelligence methods. Hybrid AI combines
+                connectionist AI with computational logic and reasoning to render safe
+                and trustworthy methods for real-world problem-solving.
+              </p>
+              <div class="research-pills">
+                <a href="./research.html" class="research-pill">Machine Learning</a>
+                <a href="./research.html" class="research-pill">Natural Language Processing</a>
+                <a href="./research.html" class="research-pill">Neuro-Symbolic AI</a>
+                <a href="./research.html" class="research-pill">Human-AI Collaboration</a>
+              </div>
             </div>
-            <div style="visibility: hidden">
-              <img
-                class="center-image"
-                src="./assets/images/robots/smads.png"
-              />
+            <div class="hero-photo">
+              <img src="./images/LBRN.jpg" alt="HAIM Lab at LBRN" />
+              <p class="hero-photo-caption">HAIM Lab at the LBRN Annual Conference</p>
             </div>
-            <div style="visibility: hidden">
-              <img
-                class="center-image"
-                src="./assets/images/robots/jackal_navigation.png"
-              />
-            </div>
-            <div style="visibility: hidden">
-              <img
-                class="center-image"
-                src="./assets/images/robots/spot_stairs.png"
-              />
-            </div>
-            <div style="visibility: hidden">
-              <img
-                class="center-image"
-                src="./assets/images/robots/ut_automata.png"
-              />
-            </div>
-            <div style="visibility: hidden">
-              <img
-                class="center-image"
-                src="./assets/images/robots/automata_group.jpg"
-              />
-            </div>
-          </div> -->
+          </div>
 
-          <script
-            type="text/javascript"
-            src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-          ></script>
+          <!-- Stats strip -->
+          <div class="stats-strip">
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Research Areas</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">7+</span>
+              <span class="stat-label">Lab Members</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Active Grants</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">LSU New Orleans</span>
+              <span class="stat-label">New Orleans, LA</span>
+            </div>
+          </div>
 
-          <script
-            type="text/javascript"
-            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-          ></script>
+          <!-- Announcements -->
+          <hr class="section-divider" />
+          <h2 class="section-heading">Announcements</h2>
 
-          <script
-            type="text/javascript"
-            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-          ></script>
+          <div class="announcement-cards">
 
-          <script type="text/javascript">
-            $('.main_carousel')
-              .children('div')
-              .each(function () {
-                $(this).css('visibility', 'visible');
-              });
-            $(document).ready(function () {
-              $('.main_carousel').slick({
-                autoplay: true,
-                autoplaySpeed: 6250,
-                fade: true,
-                cssEase: 'linear',
-                dots: true,
-                infinite: true,
-              });
-            });
-          </script>
+            <p class="ann-year-label" style="margin-top:0">2025</p>
 
-          <p>
-            For the mutual progress of humanity and science, we must be able to
-            use AI, not as mere tools but as our able teammates. In the Human,
-            Hybrid AI, and Machines (HAIM, rhymes with “time”) laboratory, directed
-            by
-            <a target="_blank" href="https://cs.uno.edu/~shreya/"
-              >Dr. Shreya Banerjee</a
-            >, our overarching research goal is to make progress in this
-            direction, using hybrid artificial intelligence methods. Hybrid
-            artificial intelligence techniques combines connectionist AI with
-            the power of computational logic and reasoning to render safe and
-            trustworthy methods for real-world problem-solving. This, more often
-            than not, leads to exploration of problems at the intersection of
-            Computer Science and other scientific domains that call for
-            interdisciplinary approaches.
-          </p>
-                    <section class="announcements" aria-labelledby="announcements-heading">
-            <h2 id="announcements-heading">Announcements</h2>
-            <p class="announcements-intro">
-              Stay current with recent highlights from our lab.
-            </p>
-            
-            <div class="announcement-year-group">
-              <h3 class="announcement-year-heading">2025</h3>
-              <ul class="announcement-list">
-                <!-- <li class="announcement-item">
-                  <span class="announcement-date">October 2025:</span>
-                  <div class="announcement-content">
-                    <p>HAIM Lab welcomes new graduate cohort. We're excited to introduce three new Ph.D. students joining our team this fall, bringing fresh perspectives on human-centered AI.</p>
-                  </div>
-                </li> -->
-                <li class="announcement-item">
-                  <span class="announcement-date">June 2025:</span>
-                  <div class="announcement-content">
-                    <p>Our paper, <b>Small Vision-Language Models on Qualitative Mechanical Problems</b> has been accepted at the 38th International Workshop on Qualitative Reasoning of the 34th IJCAI.</p>
-                  </div>
-                </li>
-                
-                <li class="announcement-item">
-                  <span class="announcement-date">June 2025:</span>
-                  <div class="announcement-content">
-                    <p>Dr. Banerjee co-organizes the <a href="https://haim-lab.github.io/hhai2025">HHAI-KEML 2025</a> workshop at the <a href="https://hhai-conference.org/2025/">HHAI 2025</a> conference.</p>
-                  </div>
-                </li>
-                <li class="announcement-item">
-                  <span class="announcement-date">August 2025:</span>
-                  <div class="announcement-content">
-                    <p>Our paper , <b>An Interactive Game-based Multi-Agent AI System for Children’s Social and Emotional Development</b> has been accepted at the 34th International Joint Conference on Artificial Intelligence.</p>
-                  </div>
-                </li>
-              </ul>
+            <div class="announcement-card">
+              <div class="ann-date-block">
+                <span class="ann-date-month">Aug</span>
+                <span class="ann-date-year">2025</span>
+              </div>
+              <div>
+                <span class="ann-tag tag-paper">Paper</span>
+                <p class="ann-body">Our paper, <b>An Interactive Game-based Multi-Agent AI System for Children's Social and Emotional Development</b> has been accepted at the 34th International Joint Conference on Artificial Intelligence.</p>
+              </div>
             </div>
 
-            <div class="announcement-year-group">
-              <h3 class="announcement-year-heading">2024</h3>
-              <ul class="announcement-list">
-                <li class="announcement-item">
-                  <span class="announcement-date">December 2024:</span>
-                  <div class="announcement-content">
-                    <p>HAIM Lab students, Nhi, Soheil and Jenny win Startup UNO challenge 2024.</p>
-                  </div>
-                </li>
-                <li class="announcement-item">
-                  <span class="announcement-date">August 2024:</span>
-                  <div class="announcement-content">
-                    <p>One PhD student, <a href="https://hansah.me">Henry Ansah</a>, joins the lab working on projects in the domain of human-AI collaboration and Neuro-Symbolic Reasoning.</p>
-                  </div>
-                </li>
-              </ul>
+            <div class="announcement-card">
+              <div class="ann-date-block">
+                <span class="ann-date-month">Jun</span>
+                <span class="ann-date-year">2025</span>
+              </div>
+              <div>
+                <span class="ann-tag tag-event">Event</span>
+                <p class="ann-body">Dr. Banerjee co-organizes the <a href="./hhai2025.html">HHAI-KEML 2025</a> workshop at the <a href="https://hhai-conference.org/2025/">HHAI 2025</a> conference.</p>
+              </div>
             </div>
-          </section>
+
+            <div class="announcement-card">
+              <div class="ann-date-block">
+                <span class="ann-date-month">Jun</span>
+                <span class="ann-date-year">2025</span>
+              </div>
+              <div>
+                <span class="ann-tag tag-paper">Paper</span>
+                <p class="ann-body">Our paper, <b>Small Vision-Language Models on Qualitative Mechanical Problems</b> has been accepted at the 38th International Workshop on Qualitative Reasoning of the 34th IJCAI.</p>
+              </div>
+            </div>
+
+            <p class="ann-year-label">2024</p>
+
+            <div class="announcement-card">
+              <div class="ann-date-block">
+                <span class="ann-date-month">Dec</span>
+                <span class="ann-date-year">2024</span>
+              </div>
+              <div>
+                <span class="ann-tag tag-award">Award</span>
+                <p class="ann-body">HAIM Lab students Nhi, Soheil, and Jenny win the Startup UNO Challenge 2024.</p>
+              </div>
+            </div>
+
+            <div class="announcement-card">
+              <div class="ann-date-block">
+                <span class="ann-date-month">Aug</span>
+                <span class="ann-date-year">2024</span>
+              </div>
+              <div>
+                <span class="ann-tag tag-people">New Member</span>
+                <p class="ann-body">PhD student <a href="https://hansah.me">Henry Ansah</a> joins the lab, working on human-AI collaboration and Neuro-Symbolic Reasoning.</p>
+              </div>
+            </div>
+
+          </div>
+
         </section>
       </div>
-      <!-- <hr /> -->
     </div>
-    <!-- close container -->
-    <!-- End Document
-  ------------------------------------ -->
   </body>
-<>
-
+</html>
